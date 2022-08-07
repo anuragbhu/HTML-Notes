@@ -1,0 +1,96 @@
+What is HTML?
+	HTML is the standard markup language for creating Web pages.
+	HTML describes the structure of a Web pages.
+	The <!DOCTYPE html> declaration defines that this document is an HTML5 document.
+	Using latest HTML5 standard.
+
+Elements:
+	> Headings
+	> Paragraphs
+	> Links using anchor tag
+	> Image using img tag: <img src="img_girl.jpg" alt="Girl in a jacket">
+
+What is an HTML Element?
+	HTML elements tell the browser how to display the content.
+	An HTML element is defined by a start tag, some content, and an end tag.
+	Some HTML elements have no content (like the <br> element). These elements are called empty elements. Empty elements do not have an end tag!:
+		The HTML <br> element defines a line break.
+		Use <br> if you want a line break (a new line) without starting a new paragraph.
+
+HTML is Not Case Sensitive:
+	HTML tags are not case sensitive: <P> means the same as <p>.
+
+HTML Attributes:
+	HTML attributes provide additional information about HTML elements.
+	All HTML elements can have attributes.
+	Attributes are always specified in the start tag.
+	Attributes usually come in name/value pairs like: name="value".
+
+
+HTML Horizontal Rules:
+	The <hr> tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.
+
+The HTML <pre> Element:
+	The pre tag preserves both spaces and line breaks.
+	<pre>
+	   My Bonnie lies over the ocean.
+
+	   My Bonnie lies over the sea.
+
+	   My Bonnie lies over the ocean.
+	   
+	   Oh, bring back my Bonnie to me.
+	</pre>
+
+
+HTML Formatting Elements:
+	Formatting elements were designed to display special types of text:
+		<b> - Bold text or <strong> - Important text
+		<i> - Italic text or <em> - Emphasized text
+		<mark> - Marked text (highlight text with color)
+		<small> - Smaller text
+		<del> - Deleted text (Strikethrough Text)
+		<ins> - Inserted text (Browsers will usually underline inserted text)
+		<sub> - Subscript text
+		<sup> - Superscript text
+
+HTML Comment/Multi-line Comment Tag:
+	<!-- Write your comments here -->
+	Hide Inline Content:
+		<p>This <!-- great text --> is a paragraph.</p>
+		
+HTML Colors:
+	HTML colors are specified with predefined color names, or with RGB, HEX, or RGBA values.
+	RGB/RGBA:
+		Each parameter (red, green, and blue) defines the intensity of the color with a value between 0 and 255.
+		This means that there are 256 x 256 x 256 = 16777216 possible colors!
+		An RGB color value represents RED, GREEN, and BLUE light sources. i.e. rgb(red, green, blue) or rgb(255, 0, 0) = RED
+		To display black, set all color parameters to 0, like this: rgb(0, 0, 0).
+		To display white, set all color parameters to 255, like this: rgb(255, 255, 255).
+		An RGBA color value is an extension of RGB with an Alpha channel (opacity), i.e. rgba(red, green, blue, alpha) or rgba(255, 99, 71, 0.5)
+		The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all)
+	HEX:
+		A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color.
+		Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).
+		For example, #ff0000 is displayed as red, because red is set to its highest value (ff), and the other two (green and blue) are set to 00.
+		To display black, set all color parameters to 00, like this: #000000.
+		To display white, set all color parameters to ff, like this: #ffffff.
+		
+HTML Links(hyperlinks =  electronic document on a computer that is connected to another electronic document):
+	An unvisited link is underlined and blue
+	A visited link is underlined and purple
+	An active link is underlined and red
+	target attribute with value as _blank - Opens the document in a new window or tab.
+	Absolute URLs (a full web address) vs. Relative URLs  (without the "https://www" part or a local URL)
+		Absolute: <a href="https://www.w3schools.com/html/default.asp">HTML tutorial</a>
+		Relative: <a href="/html/default.asp">HTML tutorial</a>
+	Link to an Email Address: <a href="mailto:someone@example.com" title="Email Address">Send email</a>
+	Title helps while hovering the mouse.
+	
+HTML Links - Create Bookmarks:
+	HTML links can be used to create bookmarks, so that readers can jump to specific parts of a web page.
+		First, use the id attribute to create a bookmark i.e. <h2 id="C4">Chapter 4</h2>
+		Then, add a link to the bookmark i.e. <a href="#C4">Jump to Chapter 4</a>
+		
+HTML Favicon:
+	A favicon is a small image displayed next to the page title in the browser tab.
