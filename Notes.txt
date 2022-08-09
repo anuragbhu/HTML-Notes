@@ -94,3 +94,85 @@ HTML Links - Create Bookmarks:
 		
 HTML Favicon:
 	A favicon is a small image displayed next to the page title in the browser tab.
+
+HTML Tables:
+	<table>
+		<caption>Company Details</caption>
+		<tr> --- row ---
+		  <th>Company</th> --- cell ---
+		  <th>Contact</th> --- cell ---
+		  <th>Country</th> --- cell ---
+		</tr>
+		<tr>
+		  <td>Alfreds Futterkiste</td>
+		  <td>Maria Anders</td>
+		  <td>Germany</td>
+		</tr>
+    </table>
+	
+	td: table data
+	tr: table row
+	th: table header
+	
+Padding: padding is the space between the edges and the content.
+
+HTML Lists:
+	Unordered HTML List [bullets (small black circles) by default]:
+	<ul>
+	  <li>Coffee</li>
+	  <li>Tea</li>
+	  <li>Milk</li>
+	</ul>
+	
+	Ordered HTML List [marked with numbers by default]:
+	<ol>
+	  <li>Coffee</li>
+	  <li>Tea</li>
+	  <li>Milk</li>
+	</ol>
+	
+	HTML Description Lists:
+	<dl>
+	  <dt>Coffee</dt>
+	  <dd>- black hot drink</dd>
+	  <dt>Milk</dt>
+	  <dd>- white cold drink</dd>
+	</dl>
+	
+	dl: description list, dt: defines the term (name), dd: describes each term
+	
+URL - Uniform Resource Locator:
+	A URL is another word for a web address.
+	A URL can be composed of
+		words (e.g. w3schools.com)
+		or 
+		an Internet Protocol (IP) address (e.g. 192.68.20.50)
+	Most people enter the name when surfing, because names are easier to remember than numbers.
+	Web browsers request pages from web servers by using a URL.
+	
+	A web address like https://www.w3schools.com/html/default.asp follows these syntax rules:
+		scheme://prefix.domain:port/path/filename
+		
+		Explanation:
+			scheme - defines the type of Internet service (most common is http or https)
+			prefix - defines a domain prefix (default for http is www)
+			domain - defines the Internet domain name (like w3schools.com)
+			port - defines the port number at the host (default for http is 80)
+			path - defines a path at the server (If omitted: the root directory of the site)
+			filename - defines the name of a document or resource
+			
+		Common URL Schemes:
+			Scheme: http (HyperText Transfer Protocol)	Used for: Common web pages. Not encrypted
+			Scheme: https (Secure HyperText Transfer Protocol)	Used for: Common web pages. Secure web pages. Encrypted
+			Scheme: ftp (File Transfer Protocol)	Used for: Downloading or uploading files
+			
+		URL Encoding:
+			URLs can only be sent over the Internet using the ASCII character-set. The default character-set in HTML5 is UTF-8.
+				HTML charset Attribute: <meta charset="UTF-8">
+			To display an HTML page correctly, a web browser must know which character set to use.
+			If a URL contains characters outside the ASCII set, the URL has to be converted.
+			URL encoding replaces non-ASCII characters with a "%" followed by hexadecimal digits.
+			URLs cannot contain spaces. URL encoding normally replaces a space with a plus (+) sign, or %20.
+			
+			character-set: ASCII character-set, UTF-8. ANSI etc.
+			The HTML5 specification encourages web developers to use the UTF-8 character set, which covers almost all of the characters and symbols (also Symbols, Emojis) in the world!
