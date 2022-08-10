@@ -3,6 +3,12 @@ What is HTML?
 	HTML describes the structure of a Web pages.
 	The <!DOCTYPE html> declaration defines that this document is an HTML5 document.
 	Using latest HTML5 standard.
+	
+Notes:
+	JS: JavaScript makes HTML pages more dynamic and interactive.
+	Responsive web design is about creating web pages that look good on all devices!
+	A responsive web design will automatically adjust for different screen sizes and viewports.
+	Bootstrap is popular CSS framework is Bootstrap. Bootstrap uses HTML, CSS and jQuery to make responsive web pages.
 
 Elements:
 	> Headings
@@ -176,3 +182,131 @@ URL - Uniform Resource Locator:
 			
 			character-set: ASCII character-set, UTF-8. ANSI etc.
 			The HTML5 specification encourages web developers to use the UTF-8 character set, which covers almost all of the characters and symbols (also Symbols, Emojis) in the world!
+			
+HTML Block and Inline Elements:
+	Every HTML element has a default display value, depending on what type of element it is:
+		There are two display values: block and inline.
+		A block-level element always starts on a new line and takes up the full width available.
+		An inline element does not start on a new line and it only takes up as much width as necessary.
+		Two commonly used block elements are: <p> and <div> and many others (<table>, <form> etc).
+		<span> element is the common inline elements and many others (<a>, <img> etc).
+		An inline element cannot contain a block-level element!
+		
+HTML class Attribute:
+	The HTML class attribute is used to specify a class for an HTML element. The class attribute can be used on any HTML element.
+	Multiple HTML elements can share the same class. The class name is case sensitive
+	The class attribute is often used to point to a class name in a style sheet. 
+	It can also be used by a JavaScript to access and manipulate elements with the specific class name.
+	
+	<h1>My <span class="note">Important</span> Heading</h1>
+	.note {
+	  font-size: 120%;
+	  color: red;
+	}
+	
+HTML id Attribute:
+	The HTML id attribute is used to specify a unique id for an HTML element.
+	You cannot have more than one element with the same id in an HTML document. The id name is case sensitive!
+	The id attribute is used to point to a specific style declaration in a style sheet. 
+	It is also used by JavaScript to access and manipulate the element with the specific id.
+	The id name must contain at least one character, cannot start with a number, and must not contain whitespaces (spaces, tabs, etc.).
+	
+	<h1 id="myHeader">My Header</h1>
+	#myHeader {
+	  background-color: lightblue;
+	  color: black;
+	}
+	
+HTML Iframes:
+	An HTML iframe is used to display a web page within a web page.
+	<iframe src="url" title="description"></iframe>
+	
+HTML File Paths:
+	<img src="picture.jpg"> Description: The "picture.jpg" file is located in the same folder as the current page
+	<img src="images/picture.jpg"> Description: The "picture.jpg" file is located in the images folder in the current folder
+	<img src="/images/picture.jpg">	Description: The "picture.jpg" file is located in the images folder at the root of the current web
+	<img src="../picture.jpg"> Description: The "picture.jpg" file is located in the folder one level up from the current folder
+	
+HTML - The Head Element:
+	The HTML <head> element is a container for the following elements: <title>, <style>, <meta>, <link>, and <script>
+	The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag.
+	HTML metadata is data about the HTML document. Metadata is not displayed.
+	
+		The <title> element:
+			is shown in the browser's title bar or in the page's tab
+			provides a title for the page when it is added to favorites
+			displays a title for the page in search engine-results
+			
+		Setting The Viewport using the HTML <meta> Element:
+			The viewport is the user's visible area of a web page. It varies with the device - it will be smaller on a mobile phone than on a computer screen.
+			
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			
+			This gives the browser instructions on how to control the page's dimensions and scaling.
+				The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+				The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
+				
+HTML Forms:
+	An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+	<input type="text">	Description: Displays a single-line text input field
+	<input type="radio">	Description: Displays a radio button (for selecting one of many choices)
+	<input type="checkbox">	Description: Displays a checkbox (for selecting zero or more of many choices)
+	<input type="submit">	Description: Displays a submit button (for submitting the form)
+	<input type="button">	Description: Displays a clickable button
+	<input type="password"> Description: defines a password field (The characters in a password field are masked (shown as asterisks or circles)).
+	<input type="date"> Description: used for input fields that should contain a date (use the min and max attributes to add restrictions to dates).
+	<input type="email"> Description: used for input fields that should contain an e-mail address (automatically validated when submitted).
+	<input type="file"> Description: defines a file-select field and a "Browse" button for file uploads.
+	<input type="number"> Description: defines a numeric input field
+	(default width of an input field is 20 characters)
+	
+	Note: 1) The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.
+			 The <label> element is useful for screen-reader users
+		  2) The name attribute specifies the name of an <input> element.
+			 The name attribute is used to reference elements in a JavaScript, or to reference form data after a form is submitted.
+		  3) When autocomplete is on, the browser automatically complete values based on values that the user has entered before.
+		  4) The action attribute defines the action to be performed when the form is submitted.
+			 Usually, the form data is sent to a file on the server when the user clicks on the submit button.
+			 In the below example, the form data is sent to a file called "action_page.php".
+		  5) The <select> element defines a drop-down list. By default, the first item in the drop-down list is selected.
+		  6) The <textarea> element defines a multi-line input field (a text area).
+		  7) The <button> element defines a clickable button.
+			 <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+		  8) The input value attribute specifies an initial value for an input field.
+	
+	The Method Attribute:
+		Notes on GET (default):
+			Appends the form data to the URL, in name/value pairs
+			NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)
+			The length of a URL is limited (2048 characters)
+			Useful for form submissions where a user wants to bookmark the result
+			GET is good for non-secure data, like query strings in Google
+		Notes on POST:
+			Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)
+			POST has no size limitations, and can be used to send large amounts of data.
+			Form submissions with POST cannot be bookmarked
+		
+	<form action=""/action_page.php"" target="_blank" autocomplete="on" method="post">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Enter Name" value="Anurag" readonly><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd"><br>
+        <label for="birthday">Birthday:</label><br>
+        <input type="date" id="birthday" name="birthday" min="20-01-01"><br>
+		<label for="email">Enter your email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+		<label for="myfile">Select a file:</label><br>
+        <input type="file" id="myfile" name="myfile"><br>
+
+        <label for="cars">Choose a car:</label><br>
+        <select id="cars" name="cars"><br>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select><br>
+
+        <textarea name="message" rows="10" cols="30"></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
