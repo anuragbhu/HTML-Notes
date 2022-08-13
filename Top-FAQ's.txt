@@ -1,0 +1,93 @@
+Are the HTML tags and elements the same thing?
+	No. HTML elements are defined by a starting tag, may contain some content and a closing tag. 
+	For example, <h1>Heading 1</h1> is a HTML element but just <h1> is a starting tag and </h1> is a closing tag.
+	
+What are HTML Entities?
+	In HTML some characters are reserved like ‘<’, ‘>’, ‘/’, etc. To use these characters in our webpage we need to use the character entities 
+	called HTML Entities. Below are a few mapping between the reserved character and its respective entity character to be used.
+	Character: '&', Entity Name: '&amp;', Entity Number: '&#38;'
+	
+How to optimize website assets loading?
+To optimize website load time we need to optimize its asset loading and for that:
+	CDN hosting - A CDN or content delivery network is geographically distributed servers to help reduce latency.
+	File compression - This is a method that helps to reduce the size of an asset to reduce the data transfer
+	File concatenation - This reduces the number of HTTP calls
+	Minify scripts - This reduces the overall file size of js and CSS files
+	Parallel downloads - Hosting assets in multiple subdomains can help to bypass the download limit of 6 assets per domain of all modern browsers. 
+						 This can be configured but most general users never modify these settings.
+	Lazy Loading - Instead of loading all the assets at once, the non-critical assets can be loaded on a need basis.
+	
+How is Cell Padding different from Cell Spacing?
+Cell Spacing is the space or gap between two consecutive cells. Whereas, Cell Padding is the space or gap between the text/ content of the cell 
+and the edge/ border of the cell.
+
+How can we club two or more rows or columns into a single row or column in an HTML table?
+HTML provides two table attributes “rowspan” and “colspan” to make a cell span to multiple rows and columns respectively.
+
+In how many ways can we position an HTML element?
+There are mainly 7 values of position attribute that can be used to position an HTML element:
+	static: Default value. Here the element is positioned according to the normal flow of the document.
+	absolute: Here the element is positioned relative to its parent element.
+	fixed:
+	relative:
+	initial: This resets the property to its default value.
+	inherit: Here the element inherits or takes the property of its parent.
+	
+Difference between link tag <link> and anchor tag <a>?
+The anchor tag <a> is used to create a hyperlink to another webpage or to a certain part of the webpage and these links are clickable, whereas, 
+link tag <link> defines a link between a document and an external resource and these are not clickable.
+
+What are some of the advantages of HTML5 over its previous versions?
+	It has Multimedia Support.
+	HTML5 also allows users to draw various shapes like rectangles, circles, triangles, etc.
+	
+What are Semantic Elements?
+Semantic elements are those which describe the particular meaning to the browser and the developer. 
+Elements like <form>, <table>, <article>, <figure>, etc., are semantic elements.
+
+What is a manifest file in HTML5?
+The manifest file is used to list down resources that can be cached. Browsers use this information to make the web page load faster than the 
+first time. There are 3 sections in the manifest file
+	CACHE Manifest - Files needs to be cached
+	Network - File never to be cached, always need a network connection.
+	Fallback - Fallback files in case a page is inaccessible
+	
+	CACHE MANIFEST
+	# 2012-06-16 v1.0.0
+	/style.css
+	/logo.gif
+	/main.js
+	NETWORK:
+	login.php
+	FALLBACK:
+	/html/ /offline.html
+
+
+	<!DOCTYPE HTML>
+	<html manifest="tutorial.appcache">
+	...
+	...
+	</html>
+	
+How to include javascript code in HTML?
+HTML provides a <script> tag using which we can run the javascript code and make our HTML page more dynamic.
+	<!DOCTYPE html>
+	<html>
+	   <body>
+		<h1>
+			  <span>This is a demo for </span>
+			  <u><span id="demo"></span></u>
+	   </h1>
+	   <script>
+		   document.getElementById("demo").innerHTML = "script Tag"
+	   </script>
+	   </body>
+	</html>
+	
+When to use scripts in the head and when to use scripts in the body?
+If the scripts contain some event-triggered functions or jquery library then we should use them in the head section. 
+If the script writes the content on the page or is not inside a function then it should be placed inside the body section at the bottom. 
+In short, follow below three points:
+	Place library scripts or event scripts in the head section.
+	Place normal scripts that do not write anything on the page, in the head section until there is any performance issue.
+	Place scripts that render something on the web page at the bottom of the body section.
