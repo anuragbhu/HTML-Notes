@@ -233,6 +233,7 @@ HTML id Attribute:
 HTML Iframes:
 	An HTML iframe is used to display a web page within a web page.
 	<iframe src="url" title="description"></iframe>
+	Can we display a web page inside a web page or Is nesting of webpages possible? YES!
 	
 HTML File Paths:
 	<img src="picture.jpg"> Description: The "picture.jpg" file is located in the same folder as the current page
