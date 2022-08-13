@@ -4,6 +4,8 @@ What is HTML?
 	The <!DOCTYPE html> declaration defines that this document is an HTML5 document.
 	Using latest HTML5 standard.
 	An HTML page will validate without the <html> and <body> tags
+	The HTML <head> tag can also be omitted.
+		Browsers will add all elements before <body>, to a default <head> element.
 	
 Notes:
 	JS: JavaScript makes HTML pages more dynamic and interactive.
