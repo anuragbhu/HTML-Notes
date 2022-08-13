@@ -3,6 +3,7 @@ What is HTML?
 	HTML describes the structure of a Web pages.
 	The <!DOCTYPE html> declaration defines that this document is an HTML5 document.
 	Using latest HTML5 standard.
+	An HTML page will validate without the <html> and <body> tags
 	
 Notes:
 	JS: JavaScript makes HTML pages more dynamic and interactive.
