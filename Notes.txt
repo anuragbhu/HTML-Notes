@@ -6,6 +6,7 @@ What is HTML?
 	An HTML page will validate without the <html> and <body> tags
 	The HTML <head> tag can also be omitted.
 		Browsers will add all elements before <body>, to a default <head> element.
+	You should always include the lang attribute inside the <html> tag, to declare the language of the Web page. This is meant to assist search engines and 	browsers. <html lang="en-us">
 	
 Notes:
 	JS: JavaScript makes HTML pages more dynamic and interactive.
