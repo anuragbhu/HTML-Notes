@@ -324,3 +324,12 @@ HTML Forms:
 
         <input type="submit" value="Submit">
     </form>
+    
+Difference between strong and bold tag in HTML
+	The main difference between these two tag is that the strong tag semantically emphasizes on the important word or section of words while the bold tag is just offset text conventionally styled in bold. Below is the code to show this difference.
+	i.e. The <strong> tag is used to define text with strong importance. The bold (<b>) tag specifies bold text without any extra importance.
+	
+What are Semantic Elements?
+	A semantic element clearly describes its meaning to both the browser and the developer.
+	Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+	Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
